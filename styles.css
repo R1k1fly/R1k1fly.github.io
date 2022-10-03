@@ -5,7 +5,7 @@ button{
 
 	text-align: center;
 	align-content: center;
-
+	position: absolute;
     border-width: 3px;
     border-color: #00FF00;
     background-color: black;
