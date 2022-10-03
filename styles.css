@@ -4,6 +4,7 @@ button{
 	font-size: 5vw;
 
 	text-align: center;
+	align-content: center;
 
     border-width: 3px;
     border-color: #00FF00;
@@ -12,10 +13,11 @@ button{
 }
 
 table{
-    width: 200px;
+    width: 30vw;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    align-content: center;
 
 }
 
@@ -28,12 +30,14 @@ button:hover {
 
 h1{
 	text-align: center;
+	align-content: center;
 	font-size: 3vw;
 	color: #00FF00;
 }
 
 h3{
 	text-align: center;
+	align-content: center;
 	font-size: 2vw;
 	color: #00FF00;
 }
@@ -46,6 +50,7 @@ h3{
 	height: 8vw;
 	color: #00FF00;
 	text-align: center;
+	align-content: center;
 	border-width: 3px;
     border-color: #00FF00;
     background-color: black;
@@ -55,10 +60,10 @@ h3{
 
 
 html{
-	align-items: center; 
+	align-content: center; 
 	background-color: black;
 	color: #00FF00;
-/*	background-image: url("/Users/andreyzhabrovets/Desktop/IT/Coding/JS/Lessons/background.jpg"); */
+	background-image: url("/Users/andreyzhabrovets/Desktop/IT/Coding/JS/Lessons/background.jpg"); 
 }
 
 #wrapper{
