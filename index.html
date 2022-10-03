@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tic-Tac-Toe</title>
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="styles(copy).css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -56,52 +56,52 @@ function change_text(number){
 
 function winner(){
   if (document.getElementById("1").innerHTML == "X" && document.getElementById("2").innerHTML == "X"  && document.getElementById("3").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("4").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("6").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("7").innerHTML == "X" && document.getElementById("8").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("1").innerHTML == "X" && document.getElementById("4").innerHTML == "X"  && document.getElementById("7").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("2").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("8").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("3").innerHTML == "X" && document.getElementById("6").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("1").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }else if (document.getElementById("3").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("7").innerHTML == "X"){
-    alert("Player 1 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 1 wins!";
+    
 }
 
 else if (document.getElementById("4").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("6").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+    
 }else if (document.getElementById("7").innerHTML == "O" && document.getElementById("8").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+    
 }else if (document.getElementById("1").innerHTML == "O" && document.getElementById("4").innerHTML == "O"  && document.getElementById("7").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+
 }else if (document.getElementById("2").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("8").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+
 }else if (document.getElementById("3").innerHTML == "O" && document.getElementById("6").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+
 }else if (document.getElementById("1").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+
 }else if (document.getElementById("3").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("7").innerHTML == "O"){
-    alert("Player 2 wins!");
-    reset()
+    document.getElementById("player").innerHTML = "Player 2 wins!";
+
 }
 }
 
@@ -110,6 +110,10 @@ function turn(){
     document.getElementById("player").innerHTML = "Player 1";
   }else if(document.getElementById("player").innerHTML == "Player 1"){
     document.getElementById("player").innerHTML = "Player 2";
+  }else if (document.getElementById("player").innerHTML == "Player 1 wins!"){
+    document.getElementById("player").innerHTML = "Player 2";
+  }else if(document.getElementById("player").innerHTML == "Player 2 wins!"){
+    document.getElementById("player").innerHTML = "Player 1";
   }
 }
 
