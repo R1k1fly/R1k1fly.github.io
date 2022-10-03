@@ -2,7 +2,8 @@ button{
 	width: 150px;
 	height: 150px;
 	font-size: 75px;
-	align-items: center; 
+
+	text-align: center;
 
     border-width: 3px;
     border-color: #00FF00;
@@ -36,7 +37,7 @@ h1,h3{
 	width: 310px;
 	height: 100px;
 	color: #00FF00;
-	align-items: center; 
+	text-align: center;
 
 }
 
