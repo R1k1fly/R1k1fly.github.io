@@ -66,6 +66,6 @@ html{
 	background-image: url("/Users/andreyzhabrovets/Desktop/IT/Coding/JS/Lessons/background.jpg"); 
 }
 
-.wrapper{
+#wrapper{
 	text-align: center;
 }
