@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Doc_test</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<table>
+  <h1>Tic-Tac-Toe</h1>
+  <h3 id="player">Player 1</h3>
+  <tr>
+    <td><button onclick="change_text(1)" id="1"></button></td>
+    <td><button onclick="change_text(2)" id="2"></button></td>
+    <td><button onclick="change_text(3)" id="3"></button></td>
+  </tr>
+    <tr>
+    <td><button onclick="change_text(4)" id="4"></button></td>
+    <td><button onclick="change_text(5)" id="5"></button></td>
+    <td><button onclick="change_text(6)" id="6"></button></td>
+  </tr>
+    <tr>
+    <td><button onclick="change_text(7)" id="7"></button></td>
+    <td><button onclick="change_text(8)" id="8"></button></td>
+    <td><button onclick="change_text(9)" id="9"></button></td>
+  </tr>
+</table>
+<div id="wrapper">
+  <button onclick="reset()" id="reset_button">Reset</button>
+</div>
+<script>
+function change_text(number){
+  if (document.getElementById("player").innerHTML == "Player 1"){
+      if (document.getElementById(number).innerHTML == "X"){
+      alert("Already taken!");
+    }else if(document.getElementById(number).innerHTML == "O"){
+       alert("Already taken!");
+    }else if(document.getElementById(number).innerHTML == ""){
+      document.getElementById(number).innerHTML = "X";
+      turn();
+    }
+  }else if(document.getElementById("player").innerHTML == "Player 2"){
+          if (document.getElementById(number).innerHTML == "X"){
+      alert("Already taken!");
+    }else if(document.getElementById(number).innerHTML == "O"){
+      alert("Already taken!");
+    }else if(document.getElementById(number).innerHTML == ""){
+      document.getElementById(number).innerHTML = "O";
+      turn();
+  }
+  }
+  winner();
+}
+
+function winner(){
+  if (document.getElementById("1").innerHTML == "X" && document.getElementById("2").innerHTML == "X"  && document.getElementById("3").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("4").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("6").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("7").innerHTML == "X" && document.getElementById("8").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("1").innerHTML == "X" && document.getElementById("4").innerHTML == "X"  && document.getElementById("7").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("2").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("8").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("3").innerHTML == "X" && document.getElementById("6").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("1").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("9").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}else if (document.getElementById("3").innerHTML == "X" && document.getElementById("5").innerHTML == "X"  && document.getElementById("7").innerHTML == "X"){
+    alert("Player 1 wins!");
+    reset()
+}
+
+else if (document.getElementById("4").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("6").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("7").innerHTML == "O" && document.getElementById("8").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("1").innerHTML == "O" && document.getElementById("4").innerHTML == "O"  && document.getElementById("7").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("2").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("8").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("3").innerHTML == "O" && document.getElementById("6").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("1").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("9").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}else if (document.getElementById("3").innerHTML == "O" && document.getElementById("5").innerHTML == "O"  && document.getElementById("7").innerHTML == "O"){
+    alert("Player 2 wins!");
+    reset()
+}
+}
+
+function turn(){
+  if (document.getElementById("player").innerHTML == "Player 2"){
+    document.getElementById("player").innerHTML = "Player 1";
+  }else if(document.getElementById("player").innerHTML == "Player 1"){
+    document.getElementById("player").innerHTML = "Player 2";
+  }
+}
+
+function reset(){
+  document.getElementById("1").innerHTML = "";
+  document.getElementById("2").innerHTML = "";
+  document.getElementById("3").innerHTML = "";
+  document.getElementById("4").innerHTML = "";
+  document.getElementById("5").innerHTML = "";
+  document.getElementById("6").innerHTML = "";
+  document.getElementById("7").innerHTML = "";
+  document.getElementById("8").innerHTML = "";
+  document.getElementById("9").innerHTML = "";
+  document.getElementById("player").innerHTML = "Player 1"
+}
+
+
+</script>
+</body>
+</html>
+
