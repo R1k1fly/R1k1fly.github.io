@@ -1,0 +1,50 @@
+button{
+	width: 150px;
+	height: 150px;
+	font-size: 75px;
+
+    border-width: 3px;
+    border-color: #00FF00;
+    background-color: black;
+    color: #00FF00;
+}
+
+table{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+button:hover {
+	background-color: black;
+	color: #04D706;
+
+
+}
+h1,h3{
+	text-align: center;
+	color: #00FF00;
+}
+
+
+
+#reset_button{
+	margin-top: 10px;
+	width: 310px;
+	height: 100px;
+	color: #00FF00;
+
+}
+
+body{
+	align-items: center; 
+	background-color: black;
+	color: #00FF00;
+/*	background-image: url("/Users/andreyzhabrovets/Desktop/IT/Coding/JS/Lessons/background.jpg"); */
+}
+
+#wrapper{
+	text-align: center;
+}
