@@ -1,4 +1,4 @@
-button{
+.grid-item{
 	width: 10vw;
 	height: 10vw;
 	font-size: 5vw;
@@ -21,13 +21,17 @@ table{
 
 }
 
-button:hover {
+.grid-item:hover {
 	background-color: black;
 	color: #04D706;
 
 
 }
-
+img{
+	height: 10%;
+	width: 10%;
+	box-align: center;
+}
 h1{
 	text-align: center;
 	align-content: center;
@@ -42,12 +46,66 @@ h3{
 	color: #00FF00;
 }
 
+.game_grid{
+	display: grid;
+
+  grid-template-columns: auto auto auto auto;
+}
+
+#box_1 {
+grid-row-start: 1;
+grid-column-start: 1;
+}
+
+#box_2 {
+grid-row-start: 1;
+grid-column-start: 2;
+}
+
+#box_3 {
+grid-row-start: 2;
+grid-column-start: 3;
+}
+
+#box_4 {
+grid-row-start: 2;
+grid-column-start: 4;
+}
+
+#box_5 {
+grid-row-start: 1;
+grid-column-start: 5;
+}
+
+#box_6 {
+grid-row-start: 2;
+grid-column-start: 6;
+}
+
+#box_7 {
+grid-row-start: 3;
+grid-column-start: 7;
+}
+
+#box_8 {
+grid-row-start: 3;
+grid-column-start: 8;
+}
+
+#box_9 {
+grid-row-start: 3;
+grid-column-start: 9;
+}
+
+
+
 
 
 #reset_button{
 	margin-top: 10px;
 	width: 28vw;
 	height: 8vw;
+	font-size: 5vw;
 	color: #00FF00;
 	text-align: center;
 	align-content: center;
@@ -57,14 +115,23 @@ h3{
 
 }
 
+#reset_button:active{
+	color: black;
+    background-color: #00FF00;
+
+
+}
 
 
 html{
 	align-content: center; 
 	background-color: black;
-	color: #00FF00; 
+	color: #00FF00;
+/*	background-image: url("Logo.png"); 
+	background-position: center;
+	background-size: 80%;*/
 }
 
-#wrapper{
+.wrapper{
 	text-align: center;
 }
