@@ -6,7 +6,7 @@
 	text-align: center;
 	align-content: center;
 
-    border-width: 3px;
+    border-width: 0.5vw;
     border-color: #00FF00;
     background-color: black;
     color: #00FF00;
@@ -109,7 +109,7 @@ grid-column-start: 9;
 	color: #00FF00;
 	text-align: center;
 	align-content: center;
-	border-width: 3px;
+	border-width: 0.5vw;
     border-color: #00FF00;
     background-color: black;
 
