@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles(copy).css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Logo.png">
 </head>
@@ -61,7 +61,7 @@ function change_text(number){
       document.getElementById(number).innerHTML = "O";
       turn();
   } else {
-    
+
   }
   }
   winner();
@@ -115,7 +115,10 @@ else if (document.getElementById("box_4").innerHTML == "O" && document.getElemen
 
 }else if (document.getElementById("box_3").innerHTML == "O" && document.getElementById("box_5").innerHTML == "O"  && document.getElementById("box_7").innerHTML == "O"){
     document.getElementById("player").innerHTML = "Player 2 wins!";
-
+} else{
+    if (document.getElementById("box_1").innerHTML != "" && document.getElementById("box_2").innerHTML != ""  && document.getElementById("box_3").innerHTML != "" && document.getElementById("box_4").innerHTML != "" && document.getElementById("box_5").innerHTML != ""  && document.getElementById("box_6").innerHTML != "" && document.getElementById("box_7").innerHTML != "" && document.getElementById("box_8").innerHTML != ""  && document.getElementById("box_9").innerHTML != ""){
+        document.getElementById("player").innerHTML = "Draw!";
+    }
 }
 }
 
