@@ -1,0 +1,56 @@
+.logo img{
+width: 100px;
+height: 100px;
+}
+
+.nav a{
+	text-decoration: none;
+
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.current {
+  text-shadow: 0px 0px 1px black;
+}
+
+html{
+  align-content: center; 
+  background-color: white;
+  background-size: cover;
+  color: black;
+  background-image: url("White.jpg"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100%;
+}
+
+#maps{
+  text-align: center;
+  width:100%; 
+}
+
+iframe{
+  width:90%;
+  height: 600px;
+}
