@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="styles(game).css" />
+    <link rel="icon" type="image/x-icon" href="Space_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- <div class="bg-wrap">
+  <img
+    class="bg"
+    src="Gif.gif"
+    alt=""
+  >
+<div class="content"> -->
+<header>
+<nav class="nav">
+      <div class="container">
+        <div class="logo"><a href="index.html"><img src="Space_Logo.png"></img></a></div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="game.html" class="current_page">Game</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<div id="main-content">
+<h1>Tic-Tac-Toe</h1>
+<h2 id="player">Player 1</h2>
+<div class="game-grid">
+<table>
+  <tr>
+    <td><button onclick="change_text('box_1')" class="grid-item" id="box_1"></div></button></td>
+    <td><button onclick="change_text('box_2')" class="grid-item" id="box_2"></button></td>
+    <td><button onclick="change_text('box_3')" class="grid-item" id="box_3"></button></td>
+  </tr>
+    <tr>
+    <td><button onclick="change_text('box_4')" class="grid-item" id="box_4"></button></td>
+    <td><button onclick="change_text('box_5')" class="grid-item" id="box_5"></button></td>
+    <td><button onclick="change_text('box_6')" class="grid-item" id="box_6"></button></td>
+  </tr>
+    <tr>
+    <td><button onclick="change_text('box_7')" class="grid-item" id="box_7"></button></td>
+    <td><button onclick="change_text('box_8')" class="grid-item" id="box_8"></button></td>
+    <td><button onclick="change_text('box_9')" class="grid-item" id="box_9"></button></td>
+  </tr>
+</table>
+</div>
+<div class="wrapper">
+  <button onclick="reset()" id="reset_button">Reset</button>
+</div>
+</div>
+
+<!-- </div>
+</div> -->
+
+ <script src="main.js" defer></script>
+</body>
+</html>
+
