@@ -1,10 +1,17 @@
+/*Code for the footer starts here*/
+
 .logo img{
+transition: transform .2s; 
 width: 100px;
 height: 100px;
 }
 
+.logo img:hover{
+transform: scale(1.5);
+}
+
 .nav a{
-	text-decoration: none;
+  text-decoration: none;
 
 }
 
@@ -30,6 +37,8 @@ height: 100px;
   transition: all 0.3s ease-in-out;
 }
 
+/*Code for the footer ends here*/
+
 .current {
   text-shadow: 0px 0px 1px black;
 }
@@ -45,21 +54,10 @@ html{
   min-height: 100%;
 }
 
-.contact-map{
+#label{ 
   text-align: center;
 }
 
-#maps{ 
-  text-align: center;
-}
-
-iframe{
-  width: 90%;
-  height: 700px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: black;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
-
+#error_404{
+text-align: center;
 }
