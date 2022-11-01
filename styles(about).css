@@ -7,7 +7,7 @@ height: 100px;
 }
 
 .logo img:hover{
-transform: scale(1.5);
+transform: scale(1.2);
 }
 
 .nav a{
@@ -37,11 +37,12 @@ transform: scale(1.5);
   transition: all 0.3s ease-in-out;
 }
 
-/*Code for the footer ends here*/
-
-.current {
+.current_page{
   text-shadow: 0px 0px 1px black;
 }
+/*Code for the footer ends here*/
+
+
 
 html{
   align-content: center; 

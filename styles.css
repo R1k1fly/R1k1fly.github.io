@@ -7,7 +7,7 @@ height: 100px;
 }
 
 .logo img:hover{
-transform: scale(1.5);
+transform: scale(1.2);
 }
 
 .nav a{
@@ -37,9 +37,13 @@ transform: scale(1.5);
   transition: all 0.3s ease-in-out;
 }
 
+.current_page {
+  text-shadow: 0px 0px 1px black;
+}
 /*Code for the footer ends here*/
 
 .grid-item{
+	transition: transform .2s; 
 	width: 10vw;
 	height: 10vw;
 	font-size: 5vw;
@@ -56,6 +60,14 @@ transform: scale(1.5);
 
 }
 
+.grid-item:hover{
+	background-color: white;
+	color: black;
+	box-shadow: 0px 0px 7px black;
+	text-shadow: 0px 0px 1px black;
+	transform: scale(1.05);
+}
+
 #main-content{
 vertical-align:center;
 	align-content: center;
@@ -70,14 +82,7 @@ table{
 
 }
 
-.grid-item:hover{
-	background-color: white;
-	color: black;
-	  box-shadow: 0px 0px 7px black;
-	  text-shadow: 0px 0px 1px black;
 
-
-}
 /*img{
 	height: 10%;
 	width: 10%;
@@ -96,13 +101,6 @@ h2{
 	font-size: 2.2vw;
 	color: black;
 }
-
-.game_grid{
-	display: grid;
-
-  grid-template-columns: auto auto auto auto;
-}
-
 
 
 #box_1 {
@@ -155,6 +153,7 @@ grid-column-start: 9;
 
 
 #reset_button{
+	transition: transform .2s; 
 	margin-top: 10px;
 	width: 28vw;
 	height: 8vw;
@@ -178,13 +177,12 @@ grid-column-start: 9;
 }
 
 #reset_button:hover{
+	transform: scale(1.02);
 	box-shadow: 0px 0px 7px black;
 
 }
 
-.current {
-  text-shadow: 0px 0px 1px black;
-}
+
 
 
 html{
@@ -205,7 +203,7 @@ html{
 
 
 
-.bg-wrap {
+/*.bg-wrap {
   overflow: hidden;
   position: relative;
 }
@@ -220,11 +218,11 @@ html{
 
  position: center center;
 	min-height: 100%;
-}
+}*/
 
-.content {
+/*.content {
   position: relative;
 
 }
-
+*/
 
