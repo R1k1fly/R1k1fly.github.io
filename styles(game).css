@@ -1,25 +1,72 @@
 /*Code for the footer starts here*/
 
+.logo{
+  left: 0;
+  z-index: 600;
+}
 .logo img{
-transition: transform .2s; 
-width: 150px;
-height: 150px;
+transition: transform 0.4s; 
+width: 100px;
+height: 100px;
 }
 
 .logo img:hover{
-transform: scale(1.2);
+transform: scale(1.1);
 }
 
-.nav a{
-	text-decoration: none;
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: black;
+/*  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.gfycat.com%2FFaithfulSlowCoelacanth-max-1mb.gif&f=1&nofb=1&ipt=9894166c1a80bd8f19f853558b738a6230624402c9a7acd123df97637bf63432&ipo=images"); */
+/*  background-repeat: no-repeat;
+    background-size: cover;*/
+  background-position: center center;
+  border-bottom:1px white solid;
+}
 
+
+.current_page{
+	text-decoration: none;
+  padding: 7px 15px;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+	color: white;
+  text-shadow: 0px 0px 7px white;
+}
+
+#page {
+  text-decoration: none;
+  padding: 7px 15px;
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 16px;
+  color: #88888a;
+  text-transform: uppercase;
+
+}
+
+.current_page:hover{
+color:white;
+border-bottom:1.5px solid white;
+}
+
+#page:hover{
+color:white;
+border-bottom:1.5px solid white;
 }
 
 .nav .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -30,17 +77,10 @@ transform: scale(1.2);
   justify-content: center;
 }
 
-.nav a {
-  color: black;
-  text-decoration: none;
-  padding: 7px 15px;
-  transition: all 0.3s ease-in-out;
-}
 
-.current_page {
-  text-shadow: 0px 0px 1px black;
-}
-/*Code for the footer ends here*/
+/*Code for the header ends here*/
+
+
 
 .grid-item{
 	transition: transform .2s; 
@@ -55,16 +95,17 @@ transform: scale(1.2);
     border-width: 0.4vw;
     border-color: black;
     border-radius: 7px;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
+      transition: all 0.3s ease-in-out;
 
 }
 
 .grid-item:hover{
-	background-color: white;
-	color: black;
-	box-shadow: 0px 0px 7px black;
-	text-shadow: 0px 0px 1px black;
+	background-color: black;
+	color: white;
+	box-shadow: 0px 0px 7px white;
+	text-shadow: 0px 0px 10px white;
 	transform: scale(1.05);
 }
 
@@ -92,14 +133,14 @@ h1{
 	text-align: center;
 	align-content: center;
 	font-size: 3vw;
-	color: black;
+	color: white;
 }
 
 h2{
 	text-align: center;
 	align-content: center;
 	font-size: 2.2vw;
-	color: black;
+	color: white;
 }
 
 
@@ -158,27 +199,27 @@ grid-column-start: 9;
 	width: 28vw;
 	height: 8vw;
 	font-size: 5vw;
-	color: black;
+	color: white;
 	text-align: center;
 	align-content: center;
 	border-width: 0.5vw;
-    border-color: black;
-    background-color: white;
+    border-color: white;
+    background-color: black;
     border-radius: 10px;
 
 }
 
 #reset_button:active{
 	color: white;
-	box-shadow: 0px 0px 7px black;
-	text-shadow: 0px 0px 5px black;
+	box-shadow: 0px 0px 7px white;
+	text-shadow: 0px 0px 5px white;
 
 
 }
 
 #reset_button:hover{
 	transform: scale(1.02);
-	box-shadow: 0px 0px 7px black;
+	box-shadow: 0px 0px 7px white;
 
 }
 
@@ -187,10 +228,10 @@ grid-column-start: 9;
 
 html{
 	align-content: center; 
-	background-color: white;
+	background-color: black;
 	background-size: cover;
-	color: black;
-	background-image: url("White.jpg"); 
+	color: white;
+	background-image: url("header_background.png"); 
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-height: 100%;
@@ -202,6 +243,20 @@ html{
 }
 
 
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  height: 100vh;
+  width: 70%;
+  margin: 0 auto;
+  gap: 40px 0px;
+}
+
+main{
+  grid-column: 1/span 3;
+
+}
 
 /*.bg-wrap {
   overflow: hidden;
@@ -225,4 +280,5 @@ html{
 
 }
 */
+
 
