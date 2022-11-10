@@ -84,8 +84,8 @@ border-bottom:1.5px solid white;
 
 .grid-item{
 	transition: transform .2s; 
-	width: 10vw;
-	height: 10vw;
+	width: 9.9vw;
+	height: 9.9vw;
 	font-size: 5vw;
 	font-family: 'Finger Paint', cursive;
 
@@ -97,7 +97,7 @@ border-bottom:1.5px solid white;
     border-radius: 7px;
     background-color: black;
     color: white;
-      transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -251,7 +251,7 @@ html{
   height: 100vh;
   width: 70%;
   margin: 0 auto;
-  gap: 40px 0px;
+  gap: 10px 0px;
 }
 
 main{
