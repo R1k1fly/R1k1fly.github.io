@@ -5,13 +5,14 @@
   z-index: 600;
 }
 .logo img{
-transition: transform 0.4s; 
+transition: all 0.4s ease-in-out;
 width: 100px;
 height: 100px;
+padding: 10px 20px;
 }
 
 .logo img:hover{
-transform: scale(1.1);
+transform: rotate(-10deg) scale(1.1);
 }
 
 .nav{
@@ -87,7 +88,7 @@ html{
   background-color: black;
   background-size: cover;
   color: white;
-  background-image: url("header_background.png"); 
+  background-image: url("backgrounds/header_background.png"); 
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 100%;
