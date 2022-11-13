@@ -157,7 +157,7 @@ main{
       margin-left: 4em;
       padding: 0.3em;
       border-radius: 100%;
-              box-shadow: 20px -20px 150px;
+/*              box-shadow: 20px -20px 150px;*/
               background-color: white;
              border: 1px solid;
         border-color: white;
@@ -167,36 +167,24 @@ main{
       .spotlight .image img {
         display: block;
         border-radius: 100%;
-                border: 1px solid;
-                            box-shadow: 20px -20px 150px white;
-        border-color: white;
+/*                border: 1px solid;*/
+                            box-shadow: 25px -25px 150px white;
+/*        border-color: white;*/
  transition: all 0.3s ease-in-out;
         width: 16em;
       }
 
-    .spotlight .image:hover {
-      display: inline-block;
-      margin-left: 4em;
-      padding: 0.3em;
-      border-radius: 100%;
-              box-shadow: 0px 0px 150px white;
-             border: 1px solid;
-        border-color: white;
-     transition: all 0.3s ease-in-out;
-                   background-color: white;
-
-    }
 
 
 
             .spotlight .image img:hover {
         display: block;
         border-radius: 100%;
-        border: 1px solid;
         box-shadow: 0px 0px 150px darkgoldenrod;
-        border-color: white;
-        width: 16em;
+        border-color: none;
       }
+
+
  @media screen and (max-width: 980px) {
 
       .spotlight {
