@@ -594,9 +594,7 @@ footer p {
  @media screen and (max-width: 500px) {
 
 
-body{
-  margin-left: 20%;
-}
+
 
  .current_page{
   text-decoration: none;
@@ -627,9 +625,29 @@ body{
 }
 
 .languages img{
-      padding: 0px 25px;
+      padding: 0px 20px;
       display: block;
-      width: 5em;
+      width: 4em;
+}
+
+.languages a{
+    padding: 0px 20px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Arial', serif;
+  font-size: 12px;
+}
+
+.languages p span{
+
+background-color: black;
+color: white;
+border: 1px white solid;
+padding: 5px 5px 5px 5px;
+border-radius: 5%;
+font-family: 'Arial', serif;
+font-size: 10px;
+
 }
 .grid{
   display: grid;
@@ -645,6 +663,11 @@ body{
         flex-direction: column-reverse;
         text-align: center;
       }
+
+.spotlight p{
+    font-family: 'Arial', serif;
+  font-size: 15px;
+}
 
         .spotlight .content {
           -moz-flex: 0 1 auto;
