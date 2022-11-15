@@ -24,6 +24,7 @@ filter: drop-shadow(0px 0px 20px rgba(100, 100, 100, 1));
   top: 0;
   left: 0;
   right: 0;
+    z-index: 99;
   max-width: 100%;
   margin: 0 auto;
   background-color: black;
@@ -123,7 +124,7 @@ height: 50%;
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 700px 400px 300px 300px;
+  grid-template-rows: 700px 400px 200px 600px;
   height: 100vh;
   width: 100%;
   margin: 0 auto;
@@ -158,6 +159,13 @@ footer {
   padding-top: 10px;
   border-top:1px white solid;
   width: 100vw;
+
+}
+
+hobby{
+    margin-top: 200px;
+  grid-column: 1/span 3;
+  grid-row: 4/4;
 
 }
 
@@ -279,6 +287,7 @@ flex: 1;
 
 /*Language Section starts */
 .ua_flag a{
+
   padding: 0px 40px;
   text-decoration: none;
   color: white;
@@ -315,6 +324,7 @@ flex: 1;
 }
 
 .ua_flag img{
+
     padding: 0px 40px;
          display: block;
           width: 10em;
@@ -397,6 +407,7 @@ footer p {
 
 @media screen and (max-width: 980px) {
 
+
 .current_page{
   text-decoration: none;
   padding: 7px 10px;
@@ -474,6 +485,47 @@ footer p {
 
  @media screen and (max-width: 500px) {
 
+ .language-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 200px 200px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  gap: 2vh 0px;
+ }
+
+.ua_flag{
+  grid-column: 1/1;
+  grid-row: 1/1;
+
+
+}
+
+.uk_flag{
+  grid-column: 2/2;
+  grid-row: 1/1;
+
+
+}
+
+.ru_flag{
+  grid-column: 1/1;
+  grid-row: 2/2;
+
+
+}
+
+.de_flag{
+  grid-column: 2/2;
+  grid-row: 2/2;
+
+}
+
+html{
+  text-align: center;
+}
+
 .current_page{
   text-decoration: none;
   padding: 7px 8px;
@@ -498,24 +550,40 @@ footer p {
 
 }
 
+.languages{
+        margin-left: 20%;
+}
+
 .languages img{
-      padding: 0px 2px;
+      padding: 0px 1px;
       display: block;
-      width: 5em;
+      width: 4em;
+       margin-left: 20%;
 }
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 850px 350px 300px ;
+  grid-template-rows: 900px 350px 300px ;
 }
-
-      .spotlight {
-        -moz-flex-direction: column-reverse;
-        -webkit-flex-direction: column-reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        text-align: center;
-      }
+#label{
+    margin-left: 15%;
+}
+  .spotlight {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 2em 0;
+    margin-left: 15%;
+  }
+}
+/*    margin-right: 10%;*/
+  }
 
         .spotlight .content {
           -moz-flex: 0 1 auto;
