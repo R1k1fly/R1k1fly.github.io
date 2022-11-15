@@ -356,12 +356,21 @@ filter: drop-shadow(0px 5px 10px rgba(100, 100, 100, 1));
 
 }
 
+.languages p span{
+
+background-color: black;
+color: white;
+border: 1px white solid;
+padding: 5px 5px 5px 5px;
+border-radius: 5%;
+
+}
 
 /* footer styles */
 
 
 
-.footer p {
+footer p {
   color: white;
   font-weight: bold;
   font-size: 16px;
@@ -482,10 +491,10 @@ filter: drop-shadow(0px 5px 10px rgba(100, 100, 100, 1));
 #page {
   text-decoration: none;
   padding: 7px 8px;
-  margin-right: 8px;
+  margin-right: 10px;
   transition: all 0.3s ease-in-out;
   font-family: 'Arial', serif;
-  font-size: 12px;
+  font-size: 13px;
   color: #88888a;
   text-transform: uppercase;
 
@@ -494,7 +503,7 @@ filter: drop-shadow(0px 5px 10px rgba(100, 100, 100, 1));
 .languages img{
       padding: 0px 2px;
       display: block;
-      width: 4em;
+      width: 5em;
 }
 .grid{
   display: grid;
