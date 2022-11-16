@@ -535,13 +535,6 @@ footer p {
             margin-right: auto;
           }
 
-          .spotlight .content .actions {
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
-            justify-content: center;
-            width: calc(100% + 1em);
-          }
 
         .spotlight .image {
           -moz-flex: 0 1 auto;
@@ -694,14 +687,6 @@ font-size: 10px;
             margin-right: auto;
           }
 
-          .spotlight .content .actions {
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
-            justify-content: center;
-            width: calc(100% + 1em);
-          }
-
         .spotlight .image {
           -moz-flex: 0 1 auto;
           -webkit-flex: 0 1 auto;
@@ -733,13 +718,7 @@ font-size: 10px;
             margin-right: auto;
           }
 
-          .skills .content .actions {
-            -moz-justify-content: center;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
-            justify-content: center;
-            width: calc(100% + 1em);
-          }
+
 
         .skills .image {
           -moz-flex: 0 1 auto;

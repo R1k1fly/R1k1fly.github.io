@@ -86,13 +86,13 @@ border-bottom:1.5px solid white;
 /*Code for the header ends here*/
 
 
+
 html{
   align-content: center; 
   background-color: black;
   background-size: cover;
   color: white;
   background-image: url("backgrounds/header_background.png"); 
-  background-repeat: no-repeat;
   background-position: center center;
   min-height: 100%;
 }
@@ -115,14 +115,155 @@ height: 50%;
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 900px 100px;
   height: 100vh;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
   gap: 40px 0px;
 }
 
 main{
+  margin-top: 200px;
   grid-column: 1/span 3;
+  grid-row: 1/1;
+}
+
+
+footer {
+  background-color: black;
+  height: 100px;
+  padding-top: 10px;
+  border-top:1px white solid;
+  width: 100vw;
+  margin-top: 15%;
+  grid-column: 1/span 3;
+  grid-row: 2/2;
+}
+
+.footer p {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.social-links{
+  text-align: center;
+}
+
+.social-links a {
+  align-items: center;
+  color: white;
+  padding: 0px 5px 0px 5px;
+}
+
+.social-links a:hover {
+    text-shadow: 0px 0px 7px white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 980px) {
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 100px;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  gap: 40px 0px;
+}
+
+
+footer {
+  background-color: black;
+  height: 100px;
+  padding-top: 10px;
+  border-top:1px white solid;
+  width: 100vw;
+  margin-top: 90%;
+}
+
+.current_page{
+  text-decoration: none;
+  padding: 7px 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 7px white;
+}
+
+#page {
+  text-decoration: none;
+  padding: 7px 10px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 14px;
+  color: #88888a;
+  text-transform: uppercase;
+
+}
+
+
+ @media screen and (max-width: 500px) {
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px 100px;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  gap: 40px 0px;
+}
+
+
+footer {
+  background-color: black;
+  height: 100px;
+  padding-top: 10px;
+  border-top:1px white solid;
+  width: 100vw;
+  margin-top: 100%;
+}
+
+ .current_page{
+  text-decoration: none;
+  padding: 7px 5px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0px 0px 7px white;
+}
+
+#page {
+  text-decoration: none;
+  padding: 7px 5px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Arial', serif;
+  font-size: 10px;
+  color: #88888a;
+  text-transform: uppercase;
+
+}
+
+.nav ul{
+  margin-right: 60px;
+}
+
+
 
 }
