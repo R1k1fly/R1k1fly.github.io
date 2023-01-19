@@ -100,14 +100,13 @@ html{
 #label{ 
   text-align: center;
 }
-
-#error_404{
-  text-align: center;
-}
-#error_404 img{
+#coding{
 text-align: center;
-width: 50%;
-height: 50%;
+width: 100%;
+height: 200%;
+background-image: url("coding.png");
+background-size: cover;
+
 }
 
 
@@ -204,7 +203,7 @@ footer {
 #page {
   text-decoration: none;
   padding: 7px 10px;
-  margin-right: 10px;
+  margin-right: 20px;
   transition: all 0.3s ease-in-out;
   font-family: 'Arial', serif;
   font-size: 14px;
@@ -250,7 +249,7 @@ footer {
 
 #page {
   text-decoration: none;
-  padding: 7px 5px;
+  padding: 7px 2px;
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
   font-family: 'Arial', serif;
